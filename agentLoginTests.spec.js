@@ -19,7 +19,7 @@ describe('Agent interactions', function() {
   });
   it('Counts 10 the devices in the response!', function() {
     cy.contains('Devices');
-    cy.wait(1000);
+    cy.wait(500);
     //  cy.get('#tblDevices').find('ng-reflect-row-class').should('have.length', 151)
     //  cy.viewport('iphone-6')
     cy.get('.datatable-row-wrapper').should('have.length', 10);
